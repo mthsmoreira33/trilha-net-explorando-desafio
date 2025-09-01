@@ -2,12 +2,30 @@ namespace DesafioProjetoHospedagem.Models
 {
     public class Reserva
     {
+        /// <summary>
+        /// Representa os hóspedes da reserva.
+        /// </summary>
         public List<Pessoa> Hospedes { get; set; }
+
+        /// <summary>
+        /// Representa a suíte da reserva.
+        /// </summary>
         public Suite Suite { get; set; }
+
+        /// <summary>
+        /// Representa a quantidade de dias reservados.
+        /// </summary>
         public int DiasReservados { get; set; }
 
+        /// <summary>
+        /// Construtor padrão de Reserva.
+        /// </summary>
         public Reserva() { }
 
+        /// <summary>
+        /// Cria uma nova instância de Reserva com a quantidade de dias reservados.
+        /// </summary>
+        /// <param name="diasReservados">A quantidade de dias que a suíte será reservada.</param>
         public Reserva(int diasReservados)
         {
             DiasReservados = diasReservados;
