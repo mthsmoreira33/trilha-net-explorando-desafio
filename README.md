@@ -17,5 +17,12 @@ O seu programa deverá cálcular corretamente os valores dos métodos da classe 
 
 ![Diagrama de classe estacionamento](diagrama_classe_hotel.png)
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Sobre o Projeto
+O projeto consiste em um sistema de reservas de hotel. Foram implementadas as classes `Pessoa`, `Suite` e `Reserva` para gerenciar as hospedagens.
+
+O sistema realiza os seguintes cálculos e validações:
+- **Cálculo do valor da diária:** O valor é calculado multiplicando o número de dias reservados pelo valor da diária da suíte.
+- **Desconto por longa estadia:** É concedido um desconto de 10% no valor total para reservas de 10 ou mais dias.
+- **Validação de capacidade:** O sistema não permite que uma reserva seja feita se o número de hóspedes for maior que a capacidade da suíte, lançando uma exceção nesse caso.
+- **Cadastro de hóspedes e suítes:** A classe `Reserva` permite cadastrar os hóspedes e a suíte correspondente.
+- **Consulta de quantidade de hóspedes:** É possível obter a quantidade de hóspedes de uma reserva.
