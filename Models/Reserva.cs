@@ -76,10 +76,12 @@ namespace DesafioProjetoHospedagem.Models
         public decimal CalcularValorDiaria()
         {
             decimal valor = DiasReservados * Suite.ValorDiaria;
+            const int diasMinimosParaDesconto = 10;
+            const decimal percentualDesconto = 0.10M;
 
-            if (DiasReservados >= 10)
+            if (DiasReservados >= diasMinimosParaDesconto)
             {
-                valor *= 0.9m;
+                valor -= valor * percentualDesconto;
             }
 
             return valor;
