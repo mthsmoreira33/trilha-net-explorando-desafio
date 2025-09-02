@@ -1,5 +1,8 @@
 namespace DesafioProjetoHospedagem.Models
 {
+    /// <summary>
+    /// Representa uma reserva de um hotel.
+    /// </summary>
     public class Reserva
     {
         /// <summary>
